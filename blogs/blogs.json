@@ -1,0 +1,67 @@
+{
+  "aid": "band-protocol",
+  "url": "https://medium.com/feed/bandprotocol",
+  "retrieved": "2026-06-13",
+  "blogs": [
+    {
+      "title": "Band Community Update",
+      "url": "https://medium.com/bandprotocol/band-community-update-6353450adeef",
+      "published": "2022-05-03",
+      "tags": ["Community", "Update"]
+    },
+    {
+      "title": "Band Standard Dataset Upgrade",
+      "url": "https://medium.com/bandprotocol/band-standard-dataset-upgrade-f17964a696a4",
+      "published": "2022-04-21",
+      "tags": ["Standard Dataset", "Upgrade", "Price Feeds"]
+    },
+    {
+      "title": "Band Partners: go-to place for updates on Band Protocol's business developments",
+      "url": "https://medium.com/bandprotocol/band-partners-the-go-to-place-for-updates-on-band-protocols-business-developments-and-d111a8aae211",
+      "published": "2022-04-08",
+      "tags": ["Partners", "Business", "Ecosystem"]
+    },
+    {
+      "title": "BCIP-7: Increase data integrity via the number of external calls to data sources",
+      "url": "https://medium.com/bandprotocol/bcip-7-increase-data-integrity-via-the-number-of-external-calls-to-data-sources-4904d13bbcbd",
+      "published": "2022-03-18",
+      "tags": ["Governance", "BCIP", "Data Integrity"]
+    },
+    {
+      "title": "Band Protocol 2021 Recap and Vision: Rapid Expansion, BandChain V3, and Beyond Oracle",
+      "url": "https://medium.com/bandprotocol/band-protocol-2021-recap-and-vision-rapid-expansion-bandchain-v3-and-beyond-oracle-95aef91210fe",
+      "published": "2022-03-04",
+      "tags": ["Roadmap", "BandChain V3", "Oracle", "Year in Review"]
+    },
+    {
+      "title": "BCIP-6: Increase Block Capacity through Request Gas Parameter",
+      "url": "https://medium.com/bandprotocol/bcip-6-increase-block-capacity-through-request-gas-parameter-4249f9291b57",
+      "published": "2022-02-11",
+      "tags": ["Governance", "BCIP", "Performance"]
+    },
+    {
+      "title": "Band Oracle Now Live on Oasis Network Mainnet",
+      "url": "https://medium.com/bandprotocol/band-oracle-now-live-on-oasis-network-mainnet-ba1d2e6899e0",
+      "published": "2022-01-27",
+      "tags": ["Integration", "Oasis Network", "Oracle"]
+    },
+    {
+      "title": "Coin98 Partners with Band Protocol to Enhance Usage of C98",
+      "url": "https://medium.com/bandprotocol/coin98-partners-with-band-protocol-to-enhance-usage-of-c98-64d171af468a",
+      "published": "2022-01-18",
+      "tags": ["Partnership", "Coin98", "DeFi"]
+    },
+    {
+      "title": "Band Oracle is now live on Celo's Mobile-First DeFi Platform",
+      "url": "https://medium.com/bandprotocol/band-oracle-is-now-live-on-celos-mobile-first-defi-platform-93ffbc156d70",
+      "published": "2022-01-05",
+      "tags": ["Integration", "Celo", "Oracle", "DeFi"]
+    },
+    {
+      "title": "Sienna Network and Band Protocol partner on real-time price data for SiennaLend",
+      "url": "https://medium.com/bandprotocol/sienna-network-and-band-protocol-partner-on-real-time-price-data-for-siennalend-7020b7c7ac55",
+      "published": "2021-12-02",
+      "tags": ["Partnership", "Sienna Network", "Price Data", "DeFi"]
+    }
+  ]
+}

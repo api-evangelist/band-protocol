@@ -1,0 +1,90 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://bandprotocol.com",
+  "name": "Band Protocol",
+  "description": "Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts. Built on BandChain, a high-performance Cosmos SDK blockchain, it enables developers to query price feeds, oracle scripts, data requests, and verifiable random numbers for use in decentralized applications across multiple blockchains.",
+  "url": "https://bandprotocol.com",
+  "sameAs": [
+    "https://github.com/bandprotocol",
+    "https://medium.com/bandprotocol",
+    "https://t.me/bandprotocol",
+    "https://discord.gg/3t4bsY7"
+  ],
+  "knowsAbout": [
+    "Blockchain",
+    "Oracle",
+    "Price Feeds",
+    "Cross-Chain",
+    "DeFi",
+    "Cosmos SDK",
+    "Smart Contracts",
+    "Verifiable Random Function"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Band Protocol APIs and Developer Tools",
+    "itemListElement": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "BandChain REST API",
+        "description": "HTTP access to BandChain mainnet data including oracle scripts, data requests, price feeds, validator information, account balances, and all Cosmos SDK module queries.",
+        "url": "https://docs.bandchain.org/develop/api-endpoints",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BandChain gRPC API",
+        "description": "High-performance protocol buffer access to BandChain nodes for querying oracle data, submitting data requests, and managing accounts.",
+        "url": "https://docs.bandchain.org/develop/api-endpoints",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BandChain.js SDK",
+        "description": "Comprehensive TypeScript library for seamless interaction with BandChain and Cosmos SDK blockchains.",
+        "url": "https://docs.bandchain.org/develop/developer-tools/bandchain.js/introduction",
+        "applicationCategory": "DeveloperApplication",
+        "programmingLanguage": "TypeScript"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "PyBand Python SDK",
+        "description": "Python SDK for interacting with BandChain via gRPC, enabling querying oracle scripts, data sources, and sending transactions.",
+        "url": "https://github.com/bandprotocol/pyband",
+        "applicationCategory": "DeveloperApplication",
+        "programmingLanguage": "Python"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Band VRF",
+        "description": "Provably fair, verifiable random function for on-chain randomness, suitable for NFT minting, gaming, lotteries, and DeFi.",
+        "url": "https://docs.bandchain.org/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Band Standard Dataset",
+        "description": "Open standard for creating and accessing custom price feeds delivering efficient and secure financial data directly to smart contracts.",
+        "url": "https://docs.bandchain.org/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Cross-platform"
+      }
+    ]
+  },
+  "subjectOf": [
+    {
+      "@type": "Blog",
+      "name": "Band Protocol Blog",
+      "url": "https://medium.com/bandprotocol",
+      "rssUrl": "https://medium.com/feed/bandprotocol"
+    }
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "url": "https://docs.bandchain.org"
+  }
+}
