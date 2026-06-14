@@ -1,0 +1,74 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Band Protocol
+providerId: band-protocol
+created: '2026-06-13'
+modified: '2026-06-13'
+reconciled: true
+tags:
+  - Rate Limiting
+  - Blockchain
+  - Oracle
+description: >-
+  BandChain's public REST and gRPC endpoints do not publish explicit rate limits for read-only
+  queries. Throttling is governed by individual node operators and public endpoint infrastructure.
+  For production workloads with high query volume, Band Protocol recommends running a dedicated
+  full node or using a third-party node provider. On-chain write operations (transactions) are
+  rate-limited by block throughput and BAND gas fees which serve as an economic rate-limiting
+  mechanism.
+sources:
+  - https://docs.bandchain.org/develop/api-endpoints
+  - https://docs.bandchain.org/node-validators/overview
+responseCodes:
+  throttled: 429
+  serverError: 501
+limits:
+  - name: REST read queries (public mainnet node)
+    scope: endpoint
+    metric: requests_per_second
+    limit: null
+    timeFrame: second
+    notes: Not formally published; subject to node operator discretion. Run a dedicated node for high-volume needs.
+
+  - name: gRPC read queries (public mainnet node)
+    scope: endpoint
+    metric: requests_per_second
+    limit: null
+    timeFrame: second
+    notes: Not formally published; subject to node operator discretion.
+
+  - name: Block throughput (on-chain writes)
+    scope: network
+    metric: transactions_per_block
+    limit: null
+    timeFrame: block
+    notes: >-
+      BandChain targets ~3 second block times. Transaction throughput is shared across all
+      network participants. Gas fees serve as economic throttling for write operations.
+
+  - name: Testnet faucet
+    scope: account
+    metric: requests_per_period
+    limit: 1
+    timeFrame: day
+    notes: Testnet faucet limits one BAND dispense per address per day.
+
+policies:
+  - name: Public node fair use
+    description: >-
+      Public endpoints at laozi1.bandchain.org are provided as a community service. Heavy
+      automated querying is discouraged; production applications should run their own node
+      or use a node-as-a-service provider.
+  - name: Gas fee economic throttling
+    description: >-
+      On-chain data requests require BAND token gas fees, providing an economic deterrent
+      to spam and effectively rate-limiting high-frequency write operations.
+  - name: Retry with backoff
+    description: >-
+      On receiving HTTP 429 or connection errors from a public node, implement exponential
+      backoff before retrying.
+  - name: Dedicated node for production
+    description: >-
+      For latency-sensitive or high-throughput production workloads, Band Protocol recommends
+      running a dedicated full node (4+ CPU, 16 GB RAM, 150 GB+ SSD).

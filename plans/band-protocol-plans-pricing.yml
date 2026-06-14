@@ -1,0 +1,114 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Band Protocol
+providerId: band-protocol
+created: '2026-06-13'
+modified: '2026-06-13'
+reconciled: true
+tags:
+  - Blockchain
+  - Oracle
+  - DeFi
+  - Cross-Chain
+description: >-
+  BandChain is a public permissionless blockchain. Access to the REST and gRPC APIs is free and
+  open — no API key or subscription is required to query price feeds, oracle scripts, or request
+  data. Costs arise on-chain in the form of BAND token gas fees for submitting data requests and
+  transactions. Data sources may charge per-query fees payable to their publishers in BAND.
+sources:
+  - https://docs.bandchain.org/develop/api-endpoints
+  - https://docs.bandchain.org/introduction/how-bandchain-works
+plans:
+  - id: band-protocol-public-node
+    name: Public Node Access
+    type: free
+    description: >-
+      Free, open access to BandChain mainnet and testnet REST and gRPC endpoints. No authentication
+      required for read-only queries including price feeds, oracle script results, and block data.
+    entries:
+      - label: REST API queries (read-only)
+        name: rest_query
+        type: free
+        metric: request
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+      - label: gRPC queries (read-only)
+        name: grpc_query
+        type: free
+        metric: request
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+    elements:
+      - name: Mainnet REST endpoint (laozi1.bandchain.org/api)
+      - name: Mainnet gRPC endpoint (laozi1.bandchain.org)
+      - name: Testnet REST endpoint (band-v3-testnet.bandchain.org/api)
+      - name: Testnet faucet for test BAND tokens
+      - name: Block explorer access (cosmoscan.io)
+
+  - id: band-protocol-on-chain-data-request
+    name: On-Chain Data Request
+    type: usage-based
+    description: >-
+      Submitting a MsgRequestData transaction to BandChain to trigger an oracle data request
+      incurs a gas fee in BAND tokens. The fee depends on the oracle script complexity, the number
+      of validators asked, and gas price. Data sources may charge additional per-query fees set
+      by their publishers.
+    entries:
+      - label: Transaction gas fee (uband)
+        name: gas_fee
+        type: metered
+        metric: transaction
+        limit: -1
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: variable
+        userMultiplied: false
+      - label: Data source query fee (uband, set by publisher)
+        name: data_source_fee
+        type: metered
+        metric: query
+        limit: -1
+        timeFrame: usage
+        geo: global
+        unit: 1
+        price: variable
+        userMultiplied: false
+    elements:
+      - name: Gas denominated in uband (1 BAND = 1,000,000 uband)
+      - name: Customizable gas limit per request
+      - name: Validator ask count configurable per request
+      - name: Minimum validator count threshold per request
+
+  - id: band-protocol-validator
+    name: Validator Node
+    type: enterprise
+    description: >-
+      Running a BandChain validator requires hardware, staking BAND tokens as collateral, and
+      operating data-fetching infrastructure (yoda reporter). Validators earn block rewards and
+      data request fees in BAND from the network.
+    entries:
+      - label: Minimum stake (BAND)
+        name: stake
+        type: subscription
+        metric: BAND staked
+        limit: -1
+        timeFrame: continuous
+        geo: global
+        unit: 1
+        price: variable
+        userMultiplied: false
+    elements:
+      - name: 4+ CPU cores, 16 GB RAM, 150 GB+ storage recommended
+      - name: Top 100 staked validators become active
+      - name: Earn block rewards and data request fees
+      - name: Requires yoda reporter for data submission

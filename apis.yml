@@ -1,0 +1,186 @@
+aid: band-protocol
+name: Band Protocol
+description: >-
+  Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data
+  and APIs to smart contracts. Built on BandChain, a high-performance Cosmos SDK blockchain, it
+  enables developers to query price feeds, oracle scripts, data requests, and verifiable random
+  numbers for use in decentralized applications across multiple blockchains.
+url: https://bandprotocol.com
+specificationVersion: '0.19'
+created: '2026-06-13'
+modified: '2026-06-13'
+x-category: Blockchain
+x-subcategory: Oracle
+tags:
+  - Blockchain
+  - Oracle
+  - Data Feeds
+  - Price Feeds
+  - Cross-Chain
+  - DeFi
+  - Cosmos
+apis:
+  - aid: band-protocol:bandchain-rest-api
+    name: BandChain REST API
+    description: >-
+      The BandChain REST API provides HTTP access to BandChain mainnet data including oracle scripts,
+      data requests, price feeds, validator information, account balances, and all Cosmos SDK module
+      queries. Built on gRPC-web via HTTP/1.5 or HTTP/2, the API exposes Band Protocol-specific
+      modules (oracle, feeds, TSS, tunnel) alongside standard Cosmos modules (bank, staking,
+      governance, distribution).
+    humanURL: https://docs.bandchain.org/develop/api-endpoints
+    baseURL: https://laozi1.bandchain.org/api
+    tags:
+      - Oracle
+      - Price Feeds
+      - Data Requests
+      - Validators
+      - Cosmos SDK
+      - REST
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/develop/api-endpoints
+      - type: APIReference
+        url: https://docs.bandchain.org/develop/api-endpoints
+
+  - aid: band-protocol:bandchain-grpc-api
+    name: BandChain gRPC API
+    description: >-
+      The BandChain gRPC API provides high-performance protocol buffer access to BandChain nodes
+      for querying oracle data, submitting data requests, managing accounts, and interacting with
+      all Cosmos SDK and Band Protocol modules. Supports gRPC-Web for browser-based integrations.
+    humanURL: https://docs.bandchain.org/develop/api-endpoints
+    baseURL: https://laozi1.bandchain.org
+    tags:
+      - Oracle
+      - gRPC
+      - Protocol Buffers
+      - Cosmos SDK
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/develop/api-endpoints
+
+  - aid: band-protocol:bandchain-testnet-rest-api
+    name: BandChain Testnet REST API
+    description: >-
+      The BandChain V3 Testnet REST API mirrors the mainnet REST API and provides a sandbox
+      environment for developing and testing integrations with BandChain oracle services. Includes
+      a faucet endpoint for acquiring test BAND tokens.
+    humanURL: https://docs.bandchain.org/develop/api-endpoints
+    baseURL: https://band-v3-testnet.bandchain.org/api
+    tags:
+      - Testnet
+      - Oracle
+      - Price Feeds
+      - REST
+      - Sandbox
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/develop/api-endpoints
+      - type: Sandbox
+        url: https://band-v3-testnet.bandchain.org/faucet
+
+  - aid: band-protocol:bandchain-js-sdk
+    name: BandChain.js SDK
+    description: >-
+      BandChain.js is a comprehensive TypeScript library for seamless interaction with BandChain
+      and Cosmos SDK blockchains. It supports querying oracle scripts, price feeds, validators,
+      and governance proposals as well as building and broadcasting transactions. Provides full
+      TypeScript 5.x type safety, wallet integrations (Keplr, Cosmostation, WalletConnect), and
+      automatic gas estimation.
+    humanURL: https://docs.bandchain.org/develop/developer-tools/bandchain.js/introduction
+    baseURL: https://www.npmjs.com/package/@bandprotocol/bandchain.js
+    tags:
+      - JavaScript
+      - TypeScript
+      - SDK
+      - Oracle
+      - Cosmos SDK
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/develop/developer-tools/bandchain.js/introduction
+      - type: GettingStartedDocumentation
+        url: https://docs.bandchain.org/develop/developer-tools/bandchain.js/getting-started
+      - type: SDKLibrary
+        url: https://www.npmjs.com/package/@bandprotocol/bandchain.js
+
+  - aid: band-protocol:pyband-sdk
+    name: PyBand Python SDK
+    description: >-
+      PyBand is a Python SDK that offers a comprehensive set of features for interacting with
+      BandChain via gRPC. It enables querying oracle scripts, data sources, request results,
+      account information, and validator data, as well as sending transactions in block, async,
+      or sync modes.
+    humanURL: https://github.com/bandprotocol/pyband
+    baseURL: https://pypi.org/project/pyband
+    tags:
+      - Python
+      - SDK
+      - Oracle
+      - gRPC
+    properties:
+      - type: Documentation
+        url: https://github.com/bandprotocol/pyband
+      - type: SDKLibrary
+        url: https://pypi.org/project/pyband
+
+  - aid: band-protocol:band-vrf
+    name: Band VRF
+    description: >-
+      Band VRF is a provably fair, verifiable random function for on-chain randomness. It allows
+      smart contracts to request cryptographically secure random numbers from BandChain validators,
+      suitable for NFT minting, gaming, lotteries, and any DeFi use case requiring unbiased
+      randomness.
+    humanURL: https://docs.bandchain.org/
+    baseURL: https://docs.bandchain.org/
+    tags:
+      - VRF
+      - Randomness
+      - Smart Contracts
+      - Oracle
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/
+
+  - aid: band-protocol:band-standard-dataset
+    name: Band Standard Dataset
+    description: >-
+      The Band Standard Dataset is an open standard for creating and accessing custom price feeds
+      that deliver highly efficient and secure financial data directly to smart contracts. Developers
+      can query reference prices for cryptocurrencies, FX rates, and commodities via REST or
+      bandchain.js.
+    humanURL: https://docs.bandchain.org/
+    baseURL: https://laozi1.bandchain.org/api
+    tags:
+      - Price Feeds
+      - Financial Data
+      - Cryptocurrency
+      - Oracle
+      - DeFi
+    properties:
+      - type: Documentation
+        url: https://docs.bandchain.org/
+
+common:
+  - type: Website
+    url: https://bandprotocol.com
+  - type: Documentation
+    url: https://docs.bandchain.org
+  - type: GettingStarted
+    url: https://docs.bandchain.org/develop/api-endpoints
+  - type: GitHubOrganization
+    url: https://github.com/bandprotocol
+  - type: GitHubRepository
+    url: https://github.com/bandprotocol/chain
+  - type: BlockExplorer
+    url: https://www.cosmoscan.io/
+  - type: Discord
+    url: https://discord.gg/3t4bsY7
+  - type: Telegram
+    url: https://t.me/bandprotocol
+  - type: Blog
+    url: https://medium.com/bandprotocol
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
