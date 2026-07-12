@@ -162,6 +162,8 @@ apis:
         url: https://docs.bandchain.org/
 
 common:
+  - type: DomainSecurity
+    url: security/band-protocol-domain-security.yml
   - type: Website
     url: https://bandprotocol.com
   - type: Documentation
