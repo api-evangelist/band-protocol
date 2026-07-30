@@ -1,4 +1,17 @@
 aid: band-protocol
+accessModel:
+  pricing: unknown
+  onboarding: open
+  trial: false
+  try_now: false
+  public: true
+  label: Open access
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/band-protocol.png
 name: Band Protocol
 description: >-
   Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data
