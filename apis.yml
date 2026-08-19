@@ -19,7 +19,7 @@ description: >-
   enables developers to query price feeds, oracle scripts, data requests, and verifiable random
   numbers for use in decentralized applications across multiple blockchains.
 url: https://bandprotocol.com
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 created: '2026-06-13'
 modified: '2026-06-13'
 x-category: Blockchain
