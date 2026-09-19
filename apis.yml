@@ -39,6 +39,14 @@ x-subcategory: Oracle
 tags:
   - Blockchain
   - Oracle
+  - Data Feed
+  - Price Feeds
+  - Cross-Chain
+  - DeFi
+  - Cosmos
+tags_raw:
+  - Blockchain
+  - Oracle
   - Data Feeds
   - Price Feeds
   - Cross-Chain
@@ -56,6 +64,13 @@ apis:
     humanURL: https://docs.bandchain.org/develop/api-endpoints
     baseURL: https://laozi1.bandchain.org/api
     tags:
+      - Oracle
+      - Price Feeds
+      - Data Requests
+      - Validator
+      - Cosmos SDK
+      - REST
+    tags_raw:
       - Oracle
       - Price Feeds
       - Data Requests
