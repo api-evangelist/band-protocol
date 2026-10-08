@@ -117,3 +117,39 @@ plans:
       - name: Top 100 staked validators become active
       - name: Earn block rewards and data request fees
       - name: Requires yoda reporter for data submission
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - metered
+  - subscription
+  units:
+  - request
+  - transaction
+  plans:
+  - name: Public Node Access
+    access: free
+    model: free
+    model_how: derived
+    units:
+    - request
+    periods:
+    - month
+  - name: On-Chain Data Request
+    access: other
+    model: metered
+    model_how: stated
+    units:
+    - request
+    - transaction
+    periods:
+    - per-use
+  - name: Validator Node
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - unbounded
