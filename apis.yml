@@ -206,6 +206,12 @@ apis:
         url: https://docs.bandchain.org/
 
 common:
+  - type: Plans
+    url: plans/band-protocol-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/band-protocol-rate-limits.yml
+  - type: FinOps
+    url: finops/band-protocol-finops.yml
   - url: https://blog.bandprotocol.com/rss/
     type: BlogRSS
   - type: IssueTracker
