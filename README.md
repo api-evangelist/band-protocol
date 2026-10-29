@@ -64,26 +64,111 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data
-and APIs to smart contracts. Built on BandChain, a high-performance Cosmos SDK blockchain with
-Tendermint BFT consensus, it enables developers to query price feeds, oracle scripts, data
-requests, and verifiable random numbers for use in decentralized applications across multiple
-blockchains.
+Band Protocol is a cross-chain data oracle platform that aggregates and connects real-world data and APIs to smart contracts. Built on BandChain, a high-performance Cosmos SDK blockchain, it enables developers to query price feeds, oracle scripts, data requests, and verifiable random numbers for use in decentralized applications across multiple blockchains.
 
-## APIs
+**Areas:** Blockchain · Oracle · Data Feed · Price Feeds · Cross-Chain · DeFi · Cosmos
 
-- **BandChain REST API** - HTTP access to oracle data, price feeds, validators, accounts, and all Cosmos SDK modules via `https://laozi1.bandchain.org/api`
-- **BandChain gRPC API** - Protocol buffer access to all BandChain modules via `https://laozi1.bandchain.org`
-- **BandChain Testnet REST API** - Sandbox environment via `https://band-v3-testnet.bandchain.org/api` with faucet
-- **BandChain.js SDK** - TypeScript/JavaScript library (`@bandprotocol/bandchain.js`) for querying and transacting
-- **PyBand SDK** - Python library (`pyband`) for gRPC-based BandChain interaction
-- **Band VRF** - Verifiable random function for on-chain randomness
-- **Band Standard Dataset** - Price feed standard for DeFi integrations
+## Band Protocol on APIs.io
 
-## Resources
+Everything profiled for Band Protocol is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/band-protocol/](https://apis.io/providers/band-protocol/)** — or go straight to one of the APIs or properties below.
 
+### APIs (7)
+
+- [BandChain REST API](https://apis.io/apis/band-protocol/bandchain-rest-api/) — The BandChain REST API provides HTTP access to BandChain mainnet data including oracle scripts, data requests, price feeds, validator information, account…
+- [BandChain gRPC API](https://apis.io/apis/band-protocol/bandchain-grpc-api/) — The BandChain gRPC API provides high-performance protocol buffer access to BandChain nodes for querying oracle data, submitting data requests, managing…
+- [BandChain Testnet REST API](https://apis.io/apis/band-protocol/bandchain-testnet-rest-api/) — The BandChain V3 Testnet REST API mirrors the mainnet REST API and provides a sandbox environment for developing and testing integrations with BandChain…
+- [BandChain.js SDK](https://apis.io/apis/band-protocol/bandchain-js-sdk/) — BandChain.js is a comprehensive TypeScript library for seamless interaction with BandChain and Cosmos SDK blockchains. It supports querying oracle scripts,…
+- [PyBand Python SDK](https://apis.io/apis/band-protocol/pyband-sdk/) — PyBand is a Python SDK that offers a comprehensive set of features for interacting with BandChain via gRPC. It enables querying oracle scripts, data…
+- [Band VRF](https://apis.io/apis/band-protocol/band-vrf/) — Band VRF is a provably fair, verifiable random function for on-chain randomness. It allows smart contracts to request cryptographically secure random…
+- [Band Standard Dataset](https://apis.io/apis/band-protocol/band-standard-dataset/) — The Band Standard Dataset is an open standard for creating and accessing custom price feeds that deliver highly efficient and secure financial data directly…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Band Protocol Domain Security](https://apis.io/security/band-protocol/band-protocol-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Band Protocol Plans Pricing](https://apis.io/plans/band-protocol/band-protocol-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Band Protocol Rate Limits](https://apis.io/rate-limits/band-protocol/band-protocol-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Band Protocol Finops](https://apis.io/finops/band-protocol/band-protocol-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bandprotocol.com)
 - [Documentation](https://docs.bandchain.org)
-- [API Endpoints](https://docs.bandchain.org/develop/api-endpoints)
+- [Getting started](https://docs.bandchain.org/develop/api-endpoints)
+- [Blog](https://medium.com/bandprotocol)
 - [GitHub](https://github.com/bandprotocol)
-- [Block Explorer](https://www.cosmoscan.io/)
-- [Discord](https://discord.gg/3t4bsY7)
+
+## API Evangelist rating
+
+**Kin Score 24.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 39.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/band-protocol/](https://apis.io/providers/band-protocol/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Band Protocol: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/band-protocol/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
